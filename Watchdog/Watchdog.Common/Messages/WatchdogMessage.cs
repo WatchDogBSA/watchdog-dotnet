@@ -9,6 +9,7 @@ namespace Watchdog.Common.Messages
             OccurredOn = DateTime.UtcNow;
             Details = new WatchdogMessageDetails();
         }
+        public string ApiKey { get; set; }
 
         public DateTime OccurredOn { get; set; }
 

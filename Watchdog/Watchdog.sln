@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watchdog.AspNetCore", "Watchdog.AspNetCore\Watchdog.AspNetCore.csproj", "{57F523E5-8AF1-4E96-9FD5-DDBC1EDA3113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watchdog.AspNetCore", "Watchdog.AspNetCore\Watchdog.AspNetCore.csproj", "{57F523E5-8AF1-4E96-9FD5-DDBC1EDA3113}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watchdog.Common", "Watchdog.Common\Watchdog.Common.csproj", "{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watchdog.TestProject", "Watchdog.TestProject\Watchdog.TestProject.csproj", "{3659775A-1838-4C03-A9F9-17B62AC0A190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3659775A-1838-4C03-A9F9-17B62AC0A190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3659775A-1838-4C03-A9F9-17B62AC0A190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3659775A-1838-4C03-A9F9-17B62AC0A190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3659775A-1838-4C03-A9F9-17B62AC0A190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

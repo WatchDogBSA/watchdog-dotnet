@@ -51,7 +51,6 @@ namespace Watchdog.AspNetCore.Builders
         private static IDictionary GetQueryString(HttpRequest request)
         {
             IDictionary queryString = new Dictionary<string, string>();
-
             try
             {
                 foreach (var value in request.Query)

@@ -2,7 +2,7 @@
 {
     public abstract class WatchdogSettingsBase
     {
-        internal const string _defaultApiEndPoint = "https://bsa-watchdog.westeurope.cloudapp.azure.com/collector/issues/client";
+        private const string _defaultApiEndPoint = "https://bsa-watchdog.westeurope.cloudapp.azure.com/collector/issues/client";
         
         protected WatchdogSettingsBase()
         {
@@ -10,5 +10,7 @@
         }
 
         public string ApiEndpoint { get; set; }
+
+        public string ApiKey { get; set; }
     }
 }

@@ -15,7 +15,10 @@ namespace Watchdog.Common.Builders
 
         private WatchdogMessageBuilder(WatchdogSettingsBase settings)
         {
-            _watchdogMessage = new WatchdogMessage();
+            _watchdogMessage = new WatchdogMessage()
+            {
+                ApiKey = settings.ApiKey
+            };
             _settings = settings;
         }
 
