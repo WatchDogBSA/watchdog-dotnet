@@ -8,5 +8,7 @@
         public string Locale { get; set; }
 
         public string Platform { get; set; }
+
+        public string SystemType { get; set; }
     }
 }
