@@ -9,6 +9,7 @@
     <PackageTags>Error Exeeption Handling</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>Watchdog</Product>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

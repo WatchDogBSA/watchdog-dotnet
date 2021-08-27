@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/WatchDogBSA/watchdog-dotnet</RepositoryUrl>
     <PackageTags>Error Exeeption Handling</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
