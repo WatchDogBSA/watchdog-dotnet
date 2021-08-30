@@ -1,22 +1,20 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 
 namespace Watchdog.AspNetCore
 {
     public class DefaultWatchdogAspNetCoreClientProvider : IWatchdogAspNetCoreClientProvider
     {
-        public virtual WatchdogClient GetClient(WatchdogSettings settings)
+        private readonly IOptionsMonitor<WatchdogSettings> _settings;
+
+        public DefaultWatchdogAspNetCoreClientProvider(IOptionsMonitor<WatchdogSettings> settings)
         {
-            return GetClient(settings, null);
+            _settings = settings;
         }
 
-        public virtual WatchdogClient GetClient(WatchdogSettings settings, HttpContext context)
+        public virtual WatchdogClient GetClient(HttpContext context)
         {
-            return new WatchdogClient(settings, context);
-        }
-
-        public virtual WatchdogSettings GetWatchdogSettings(WatchdogSettings baseSettings)
-        {
-            return baseSettings;
+            return new WatchdogClient(_settings.CurrentValue, context);
         }
     }
 }
