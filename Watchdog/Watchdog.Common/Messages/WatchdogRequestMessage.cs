@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 
 namespace Watchdog.Common.Messages
 {
@@ -12,8 +12,8 @@ namespace Watchdog.Common.Messages
 
         public string IPAddress { get; set; }
 
-        public IDictionary QueryString { get; set; }
+        public Dictionary<string, string> QueryString { get; set; }
 
-        public IDictionary Headers { get; set; }
+        public Dictionary<string, string> Headers { get; set; }
     }
 }

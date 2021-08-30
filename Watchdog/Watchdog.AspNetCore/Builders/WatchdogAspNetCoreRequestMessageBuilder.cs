@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
@@ -48,9 +47,9 @@ namespace Watchdog.AspNetCore.Builders
             return ip.ToString();
         }
 
-        private static IDictionary GetQueryString(HttpRequest request)
+        private static Dictionary<string, string> GetQueryString(HttpRequest request)
         {
-            IDictionary queryString = new Dictionary<string, string>();
+            var queryString = new Dictionary<string, string>();
             try
             {
                 foreach (var value in request.Query)
@@ -66,9 +65,9 @@ namespace Watchdog.AspNetCore.Builders
             return queryString;
         }
 
-        private static IDictionary GetHeaders(HttpRequest request)
+        private static Dictionary<string, string> GetHeaders(HttpRequest request)
         {
-            IDictionary headers = new Dictionary<string, string>();
+            var headers = new Dictionary<string, string>();
             try
             {
                 foreach (var header in request.Headers)

@@ -59,7 +59,7 @@ namespace Watchdog.Common.Builders
             {
                 MethodBase method = frame.GetMethod();
 
-                if (method is not null && frame.HasSource())
+                if (method is not null)
                 {
                     int lineNumber = frame.GetFileLineNumber();
                     int columnNumber = frame.GetFileColumnNumber();
