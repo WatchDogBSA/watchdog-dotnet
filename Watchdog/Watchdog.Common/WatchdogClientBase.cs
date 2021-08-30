@@ -78,14 +78,6 @@ namespace Watchdog.Common
             }
         }
 
-        public virtual async Task SendInBackgroundAsync(Exception exception)
-        {
-            if (CanSend(exception))
-            {
-                await StripAndSendAsync(exception);
-            }
-        }
-
         protected async Task StripAndSendAsync(Exception exception)
         {
             foreach (Exception e in StripWrapperExceptions(exception))

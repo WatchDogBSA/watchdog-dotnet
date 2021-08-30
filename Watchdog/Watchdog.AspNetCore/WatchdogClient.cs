@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -56,20 +57,15 @@ namespace Watchdog.AspNetCore
             }
         }
 
-        public override async Task SendInBackgroundAsync(Exception exception)
+        public void TrackException(Exception exception)
         {
-            if (CanSend(exception))
+            var feature = new ExceptionHandlerFeature
             {
-                WatchdogRequestMessage currentRequestMessage = BuildRequestMessage();
-                WatchdogResponseMessage currentResponseMessage = BuildResponseMessage();
-
-                _currentHttpContext.Value = null;
-
-                _currentRequestMessage.Value = currentRequestMessage;
-                _currentResponseMessage.Value = currentResponseMessage;
-
-                await StripAndSendAsync(exception);
-            }
+                Error = exception,
+                Path = _currentHttpContext.Value.Request.Path
+            };
+            _currentHttpContext.Value.Features.Set<IExceptionHandlerFeature>(feature);
+            _currentHttpContext.Value.Features.Set<IExceptionHandlerPathFeature>(feature);
         }
 
         private WatchdogRequestMessage BuildRequestMessage()
