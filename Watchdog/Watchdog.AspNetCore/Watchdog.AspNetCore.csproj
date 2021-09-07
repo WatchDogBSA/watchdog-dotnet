@@ -9,7 +9,8 @@
     <PackageTags>Error Exeeption Handling</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>Watchdog</Product>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
