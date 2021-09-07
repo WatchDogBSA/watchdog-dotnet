@@ -1,8 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <Authors>WathdogInc</Authors>
+        <Product>Watchdog</Product>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://bsa-watchdog.westeurope.cloudapp.azure.com/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/WatchDogBSA/watchdog-dotnet</RepositoryUrl>
+        <PackageTags>Error Exeeption Handling</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
