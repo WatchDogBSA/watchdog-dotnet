@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watchdog.AspNetCore", "Watc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watchdog.Common", "Watchdog.Common\Watchdog.Common.csproj", "{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watchdog.DotNet", "Watchdog.DotNet\Watchdog.DotNet.csproj", "{5B65D42E-65D8-4793-9C87-11D92B074AAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA9E207C-00FC-4E76-8EA8-0B993E4303E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B65D42E-65D8-4793-9C87-11D92B074AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B65D42E-65D8-4793-9C87-11D92B074AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B65D42E-65D8-4793-9C87-11D92B074AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B65D42E-65D8-4793-9C87-11D92B074AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
