@@ -77,6 +77,11 @@ namespace Watchdog.Common
                 await StripAndSendAsync(exception);
             }
         }
+        
+        public void Send(Exception exception)
+        {
+            SendAsync(exception).Wait();
+        }
 
         protected async Task StripAndSendAsync(Exception exception)
         {
